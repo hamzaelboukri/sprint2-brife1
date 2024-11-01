@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Scheduler</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="header1">
+        <nav>
+            <img class="logo" src="./img/logo.png" alt="logo">
+            <h2 class="nameweb">Task Schedule</h2>
+        </nav>
+    </header>
+
+    <div class="div1">
+        <input type="text" placeholder="Enter task title" id="input">
+        <select name="task-option" id="task" reauired>
+            <option value="select" selected>Select an option</option>
+            <option value="to do" class="option" >To Do</option>
+            <option value="doing" class="option" >Doing</option>
+            <option value="done"  class="option" >Done</option>
+            <option value="holed"  class="option">Holed</option>
+        </select>
+        <input type="date" id="date">
+        <button type="button" onclick="add()" >Add Task</button>
+    </div>
+
+    <div class="center">
+        <div  class="task-category to-do">
+            <h3>To Do</h3>
+            <!-- <button type="button" onclick="modifier()"> <i class="fa-regular fa-pen-to-square"></i> </button> -->
+            
+        </div>
+        <div class="task-category doing">
+            <h3>Doing</h3>
+            
+        </div>
+        <div class="task-category done">
+            <h3>Done</h3>
+           
+        </div>
+        <div class="task-category holed">
+            <h3>Holed</h3>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
